@@ -26,7 +26,12 @@ const userSchema = mongoose.Schema({
     message:{
         type:String,
         required:true,
+    },
+    date:{
+        type: Date,
+        default :Date.now
     }
+
 })
 //we need a collection
 // const User =mongoose.modle("User",userSchema);
